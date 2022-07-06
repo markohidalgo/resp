@@ -33,6 +33,7 @@ body {
 .navigation {
     background: var(--blue);
     position: fixed;
+    /* define el grueso de el menu */
     width: 19em;
     height: 100%;
     border-left: .6em solid var(--blue);
