@@ -15,13 +15,13 @@
           <li>
             <a href="#">
               <span class="icon"><ion-icon name="disc"></ion-icon></i></span>
-              <span class="title">Adiestrameinto <br>Imagenológico<br>División del Norte</span>
+              <span class="title">AIDN</span>
             </a>
           </li>
           <!-- ======================== Item 1 ======================== -->
           <li>
             <a href="#">
-              <span class="icon"><ion-icon name="desktop"></ion-icon></i></span>
+              <span class="icon"><ion-icon name="home"></ion-icon></span>
               <span class="title">Escritorio</span>
             </a>
           </li>
@@ -49,7 +49,7 @@
           <!-- ======================== Item 5 ======================== -->
           <li>
             <a href="#">
-              <span class="icon"><ion-icon name="cog"></ion-icon></span>
+              <span class="icon"><ion-icon name="settings"></ion-icon></span>
               <span class="title">Configuracion</span>
             </a>
           </li>
@@ -70,11 +70,42 @@
           <!-- ======================== fin de menu ======================== -->
         </ul>
       </div>
+
+      <!-- main -->
+      <div class="main">
+        <div class="topbar">
+          <!-- icono de menu -->
+          <div class="toggle">
+            <ion-icon name="menu"></ion-icon>
+          </div>
+          <!-- titulo del administrador -->
+          <div class="search">
+            <label>Adiestramiento Imagenologico Division del Norte</label>
+          </div>
+          <!-- usuario -->
+          <div class="user">
+              <img src="./img/user.jpg" alt="usuario">
+          </div>
+        </div>
+      </div>
+
     </div>
     <script
       src="https://kit.fontawesome.com/b5c531a996.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+      <script>
+         //agrega la clase "hovered" sobre cada item que obtiene el foco del mouse
+         let list = document.querySelectorAll('.navigation li');
+         function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+         }
+         list.forEach((item) => 
+         item.addEventListener('mouseover',activeLink));
+      </script>  
   </body>
 </html>
