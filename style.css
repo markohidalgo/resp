@@ -30,15 +30,21 @@ body {
 
 }
 
-.navigation {
+.navigation 
+{
     background: var(--blue);
     position: fixed;
     /* define el grueso de el menu */
-    width: 19em;
+    width: 15em;
     height: 100%;
-    border-left: .6em solid var(--blue);
+    border-left: .2em solid var(--blue);
     transition: 0.5s;
     overflow: hidden;
+}
+.navigation.active{
+    
+    width: 3.3em;
+    
 }
 
 .navigation ul {
@@ -109,7 +115,7 @@ body {
 
 .navigation ul li:nth-child(1) .icon ion-icon {
     /* hace q solo el icono de la app este mas grande */
-    font-size: 3.5em;
+    font-size: 3em;
 
 }
 
@@ -133,12 +139,12 @@ body {
     position: absolute;
     right: 0;
     top: -3.1em;
-    width: 3.1em;
-    height: 3.1em;
+    width: 3em;
+    height: 3em;
     background: transparent;
     border-radius: 50%;
     /* crea la curva superior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
-    box-shadow: 35px 35px 0 10px var(--white);
+    box-shadow: 35px 35px 0 10px transparent;
     pointer-events: none;
 }
 
@@ -147,13 +153,13 @@ body {
     content: '';
     position: absolute;
     right: 0;
-    bottom: -3.1em;
-    width: 3.1em;
+    bottom: -3em;
+    width: 3em;
     height: 3.1em;
     background: transparent;
     border-radius: 50%;
     /* crea la curva inferior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
-    box-shadow: 35px -35px 0 10px var(--white);
+    box-shadow: 30px -30px 0 10px transparent;
     pointer-events: none;
 }
 
@@ -167,11 +173,18 @@ body {
     left: 19em;
     min-height: 100vh;
     background: var(--white);
+    background: red;
     transition: 0.5s;
+}
+.main.active
+{
+    
+    width: calc(100% - 9em);
 }
 
 .topbar {
 
+    /* toda la barra superior */
     /* background: #287bff; */
     height: 4em;
     width: 100%;
@@ -182,6 +195,7 @@ body {
 }
 
 .toggle {
+    /* menu de hamburguesa */
     position: relative;
     width: 2em;
     height: 2em;
@@ -205,6 +219,7 @@ body {
 }
 
 .user {
+    /* circulo de la imagen del usuario */
     position: relative;
     width: 4em;
     height: 4em;
@@ -215,6 +230,7 @@ body {
 }
 
 .user img {
+    /* encuadre de la imagen del archivo */
     position: absolute;
     top: 0;
     left: 0;
@@ -223,4 +239,3 @@ body {
     object-fit: cover;
 
 }
-marko

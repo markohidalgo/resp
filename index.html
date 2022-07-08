@@ -97,6 +97,22 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     
       <script>
+
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+
+        toggle.onclick = function(){
+          /* cada que se presione en menu hamburguesa, se agrega la clase " active" para modificar el 
+          ancho del menu y solo queden los iconos */
+          navigation.classList.toggle('active');
+          main.classList.toggle('active');
+
+        }
+
+
+
          //agrega la clase "hovered" sobre cada item que obtiene el foco del mouse
          let list = document.querySelectorAll('.navigation li');
          function activeLink(){
@@ -106,6 +122,7 @@
          }
          list.forEach((item) => 
          item.addEventListener('mouseover',activeLink));
-      </script>  
+         // fin agrega la clase "hovered" sobre cada item que obtiene el foco del mouse
+         </script>  
   </body>
 </html>
