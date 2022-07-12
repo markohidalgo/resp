@@ -30,15 +30,21 @@ body {
 
 }
 
-.navigation {
+.navigation 
+{
     background: var(--blue);
     position: fixed;
     /* define el grueso de el menu */
-    width: 19em;
+    width: 15em;
     height: 100%;
-    border-left: .6em solid var(--blue);
+    border-left: .2em solid var(--blue);
     transition: 0.5s;
     overflow: hidden;
+}
+.navigation.active{
+    
+    width: 3.3em;
+    
 }
 
 .navigation ul {
@@ -62,8 +68,7 @@ body {
 }
 
 .navigation ul li:hover,
-.navigation ul li.hovered
- {
+.navigation ul li.hovered {
     /* hace que cuando pases el mouse por cada elemento este se seleccione en blanco */
     background: var(--white);
 
@@ -87,8 +92,7 @@ body {
 }
 
 .navigation ul li:hover a,
-.navigation ul li.hovered a
-{
+.navigation ul li.hovered a {
     color: var(--blue);
 }
 
@@ -111,11 +115,11 @@ body {
 
 .navigation ul li:nth-child(1) .icon ion-icon {
     /* hace q solo el icono de la app este mas grande */
-    font-size: 3.5em;
+    font-size: 3em;
 
 }
-.navigation ul li .title
-{
+
+.navigation ul li .title {
 
     position: relative;
     display: block;
@@ -130,44 +134,43 @@ body {
 /* curvas derechas del menu */
 
 .navigation ul li:hover a::before,
-.navigation ul li.hovered a::before
-{
-    content:'';
+.navigation ul li.hovered a::before {
+    content: '';
     position: absolute;
     right: 0;
-    top:-3.1em;
-    width: 3.1em;
-    height: 3.1em;
+    top: -3.1em;
+    width: 3em;
+    height: 3em;
     background: transparent;
     border-radius: 50%;
     /* crea la curva superior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
-    box-shadow: 35px 35px 0 10px var(--white);
+    box-shadow: 35px 35px 0 10px transparent;
     pointer-events: none;
 }
+
 .navigation ul li:hover a::after,
-.navigation ul li.hovered a::after
-{
-    content:'';
+.navigation ul li.hovered a::after {
+    content: '';
     position: absolute;
     right: 0;
-    bottom: -3.1em;
-    width: 3.1em;
+    bottom: -3em;
+    width: 3em;
     height: 3.1em;
     background: transparent;
     border-radius: 50%;
     /* crea la curva inferior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
-    box-shadow: 35px -35px 0 10px var(--white);
+    box-shadow: 30px -30px 0 10px transparent;
     pointer-events: none;
 }
 
 /* main */
 
-.main
-{
+.main {
     position: absolute;
     /* resta el area del menu al area de contenido */
     width: calc(100% - 19em);
     /* acomoda hacia la derecha el contenido con la medida exacta */
+<<<<<<< HEAD
     left:19em;
     min-height: 100vh;
     background: var(--white);
@@ -218,3 +221,74 @@ body {
     letter-spacing: 2px;
 
 }
+=======
+    left: 19em;
+    min-height: 100vh;
+    background: var(--white);
+    background: red;
+    transition: 0.5s;
+}
+.main.active
+{
+    
+    width: calc(100% - 9em);
+}
+
+.topbar {
+
+    /* toda la barra superior */
+    /* background: #287bff; */
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.8em;
+}
+
+.toggle {
+    /* menu de hamburguesa */
+    position: relative;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.search {
+    /* cuadro de busqueda en minuto 26:00 */
+    position: relative;
+    width: 100%;
+    margin: 0 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.user {
+    /* circulo de la imagen del usuario */
+    position: relative;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.user img {
+    /* encuadre de la imagen del archivo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+>>>>>>> 3674d043045092c3895cd47c8bf2b13e209a8c1a
