@@ -127,7 +127,8 @@ body {
 
 /* curvas derechas del menu */
 
-.navigation ul li:hover a::before,
+/* crea la curva superior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
+/* .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
     content: '';
     position: absolute;
@@ -137,7 +138,6 @@ body {
     height: 3.1em;
     background: transparent;
     border-radius: 50%;
-    /* crea la curva superior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
     box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
 }
@@ -152,10 +152,10 @@ body {
     height: 3.1em;
     background: transparent;
     border-radius: 50%;
-    /* crea la curva inferior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
     box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
-}
+} */
+/* crea la curva inferior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
 
 /* main */
 
