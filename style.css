@@ -30,21 +30,15 @@ body {
 
 }
 
-.navigation 
-{
+.navigation {
     background: var(--blue);
     position: fixed;
     /* define el grueso de el menu */
-    width: 15em;
+    width: 19em;
     height: 100%;
-    border-left: .2em solid var(--blue);
+    border-left: .6em solid var(--blue);
     transition: 0.5s;
     overflow: hidden;
-}
-.navigation.active{
-    
-    width: 3.3em;
-    
 }
 
 .navigation ul {
@@ -115,7 +109,7 @@ body {
 
 .navigation ul li:nth-child(1) .icon ion-icon {
     /* hace q solo el icono de la app este mas grande */
-    font-size: 3em;
+    font-size: 3.5em;
 
 }
 
@@ -139,12 +133,12 @@ body {
     position: absolute;
     right: 0;
     top: -3.1em;
-    width: 3em;
-    height: 3em;
+    width: 3.1em;
+    height: 3.1em;
     background: transparent;
     border-radius: 50%;
     /* crea la curva superior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
-    box-shadow: 35px 35px 0 10px transparent;
+    box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
 }
 
@@ -153,13 +147,13 @@ body {
     content: '';
     position: absolute;
     right: 0;
-    bottom: -3em;
-    width: 3em;
+    bottom: -3.1em;
+    width: 3.1em;
     height: 3.1em;
     background: transparent;
     border-radius: 50%;
     /* crea la curva inferior derecha en si misma, siendo la sobra de un circulo declarado en 137 */
-    box-shadow: 30px -30px 0 10px transparent;
+    box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
 }
 
@@ -170,8 +164,7 @@ body {
     /* resta el area del menu al area de contenido */
     width: calc(100% - 19em);
     /* acomoda hacia la derecha el contenido con la medida exacta */
-<<<<<<< HEAD
-    left:19em;
+    left: 19em;
     min-height: 100vh;
     background: var(--white);
     transition: 0.5s;
@@ -179,10 +172,9 @@ body {
 }
 
 
-.topbar
-{
+.topbar {
     width: 100%;
-    height: 3.75em ;
+    height: 3.75em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,13 +182,12 @@ body {
 }
 
 
-.toggle
-{
+.toggle {
     position: relative;
     top: 0;
     width: 2.5em;
     height: 2.5em;
-    background: #ccc;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,77 +195,29 @@ body {
     cursor: pointer;
 
 }
-.search
-{
+
+.search {
     position: relative;
     width: 100%;
     text-align: center;
     margin: 0 0.8em;
-    background: rgb(34, 29, 40);
+    font-size: 1.5em;
+
 }
 
-.search label
-{
+.search label {
     position: relative;
     width: 100%;
     background: var(--grey);
     letter-spacing: 2px;
 
-}
-=======
-    left: 19em;
-    min-height: 100vh;
-    background: var(--white);
-    background: red;
-    transition: 0.5s;
-}
-.main.active
-{
-    
-    width: calc(100% - 9em);
-}
-
-.topbar {
-
-    /* toda la barra superior */
-    /* background: #287bff; */
-    height: 4em;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.8em;
-}
-
-.toggle {
-    /* menu de hamburguesa */
-    position: relative;
-    width: 2em;
-    height: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    cursor: pointer;
-}
-
-.search {
-    /* cuadro de busqueda en minuto 26:00 */
-    position: relative;
-    width: 100%;
-    margin: 0 0.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5em;
+    /* barra de busqueda en 1:08:40 */
 }
 
 .user {
-    /* circulo de la imagen del usuario */
     position: relative;
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
@@ -282,13 +225,10 @@ body {
 }
 
 .user img {
-    /* encuadre de la imagen del archivo */
+
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
 }
->>>>>>> 3674d043045092c3895cd47c8bf2b13e209a8c1a
